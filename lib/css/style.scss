@@ -1,0 +1,258 @@
+/*Some Css here*/
+/*sass --watch style.scss:style.css*/
+$navbar-color: #3e80c7;
+
+header{
+	margin-top: 1%;
+	.row{
+		margin: 0;
+		.glyphicon-parent{
+			padding-top: 6%;
+		}
+		.glyphicon{
+			font-size: 200%;
+		}
+		.glyphicon-user{
+			$user-icon: #e6e6e6;
+			$user-icon-shadow: #d0d0d0;
+			font-size: 550%;
+			color: $user-icon;
+			text-shadow: -1px 0 $user-icon-shadow, 0 1px $user-icon-shadow, 1px 0 $user-icon-shadow, 0 -1px $user-icon-shadow;
+		}
+		nav{
+			padding: 0.5% 0;
+			background-color: $navbar-color;
+			ul{
+				.active{
+					a{
+						border: 1px solid white;
+						background-color: $navbar-color;
+					}
+					a:hover{
+						background-color: $navbar-color;
+					}
+				}
+				li{
+					a{
+						padding: 0;
+						border: 1px solid $navbar-color;
+						border-radius: 10px;
+						font-size: 1.5em;
+						color: white;
+						transition: border .2s linear;
+					}
+					a:hover{
+						border: 1px solid white;
+						background-color: $navbar-color;
+					}
+					a:focus{
+						background-color: $navbar-color;
+					}
+				}
+				form{
+					button{
+						padding: 0;
+						border: 1px solid $navbar-color;
+						border-radius: 10px;
+						font-size: 1.5em;
+						background-color: $navbar-color;
+						color: white;
+						transition: border .2s linear;
+					}
+					button:hover{
+						border: 1px solid white;
+						background-color: $navbar-color;
+						color: white;
+					}
+				}
+			}
+		}
+	}
+	.logo-pic{
+		position: absolute;
+		background-color: white;
+		top: 3%;
+		left: 13%;
+		width: 100%;
+		max-width: 10%;
+		z-index: 100;
+	}
+}
+#user-name{
+	padding-right: 0;
+	.btn{
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+}
+#user-face{
+	padding-left: 0;
+	.img-user{
+		border-top-right-radius: 4px;
+		border-bottom-right-radius: 4px;
+	}
+}
+#flash-message{
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+.inscription-section{
+	background-color: lightblue;
+}
+.connection-section,.inscription-section{
+	$cHead: #f2f2f2;
+	$cTitle: #458ccc;
+	$cBorder: #cccccc;
+	$cButton: #ff5556;
+	.header{
+		background-color: $cHead;
+		border: 1px solid $cBorder;
+		h3{
+			color: $cTitle;
+		}
+	}
+	.content{
+		padding: 2% 0;
+		background-color: white;
+		border-left: 1px solid $cBorder;
+		border-right: 1px solid $cBorder;
+		button{
+			border-radius: 0;
+			background-color: $cButton;
+			color: white;
+		}
+		button:hover{
+			background-color: $cButton - 20;
+		}
+	}
+	.footer{
+		margin-bottom: 5%;
+		padding: 2% 0;
+		background-color: $cHead;
+		border: 1px solid $cBorder;
+	}
+}
+.filtrage{
+	background-color: #e3e3e3;	
+	margin-bottom: 30px;		
+	height: 200px;		
+	width: 100%;		
+	padding-top: 5px;		
+	font-size: 18px;		
+	text-align: center;
+	select{		
+		width: 200px;		
+		height: 30px;		
+		overflow: hidden;		
+	}
+	button{		
+		width: 200px;		
+		text-align: center;		
+	}
+}
+.bande{		
+	background-color: #3e80c7;		
+	height: 30px;		
+	padding-top: 5px;		
+	color: white;		
+	text-align: center;		
+	margin-bottom: 30px;  
+}
+.annonce{		
+	border: solid lightslategrey 0.5px;		
+	padding: 5px;		
+	background-color: #ffffff;		
+	margin-bottom: 10px;
+	.img-annonce{		
+		margin-left: auto;		
+		margin-right: auto;		
+		display : block;		
+		/*border: solid #3e80c7 0.5px;*/  
+	}
+	h4{		
+		color: #3e80c7;  
+	}
+	.interet{		
+		background-color:#ff5556;		
+		color:white;		
+		float:right;		
+	}
+	p{		
+		border-top: solid lightslategrey 0.5px;		
+	}
+	.date_annonce{		
+		float:right;		
+		margin-bottom: 20px;		
+		margin-top: 10px;		
+	}
+	.date_publication{		
+		float:right;		
+		margin-top: 50px;		
+	}
+	.recompense{		
+		border-top: solid lightslategrey 0.5px;		
+		border-bottom: solid lightslategrey 0.5px;		
+		float:left;		
+	}
+}
+#annonce{
+	$cButton: #ff5556;
+	.head{
+		background-color: #e3e3e3;
+		padding: 1.5% 0.5%;
+	}
+	.banner{
+		margin: 1% 0;
+		background-color: $navbar-color;
+		color: white;
+	}
+	.form{
+		$cFile: #f2f2f2;
+		.form-border{
+			border: 1px solid lightgray;
+			padding: 1% 0;
+		}
+		input[type="submit"]{
+			border-radius: 0;
+			background-color: $cButton;
+			color: white;
+		}
+		input[type="submit"]:hover{
+			background-color: $cButton - 20;
+		}
+		input[type="file"]{
+			display: none;
+		}
+		label[for="avatars"]{
+			border: 1px solid #d6d6d6;
+			background-color: $cFile;
+			text-align: center;
+			font-size: 4em;
+			transition: background-color .2s linear;
+			#file-text{
+				margin-top: 10%;
+				font-size: 0.3em;
+				overflow: hidden;
+			}
+		}
+		label[for="avatars"]:hover{
+			background-color: $cFile - 20;
+		}
+	}
+}
+footer{
+	background-color: #636363;		
+	margin-top: 1%;		
+	font-size: 18px;
+	.apropos{		
+		text-align: center;		
+		color:white;		
+	}
+}	
+label{		
+	text-align: center;		
+}		
+ 		
+.localisation{		
+	text-align: center;		
+}

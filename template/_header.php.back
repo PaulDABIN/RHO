@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PBP</title>
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="lib/css/style.css">
+</head>
+<body>
+	<noscript>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="alert alert-info text-center" role="alert" id="javascript"><b>Your browser does not support JavaScript!</b><br>To have full fonctionnality on this page use a more recent <a href="https://www.google.fr/chrome/browser/desktop/" class="alert-link">browser</a></div>
+				</div>
+			</div>
+		</div>
+	</noscript>
+	<div class="container-fluid">
+		<div class="row">
+			<header class ="col-md-8 col-xs-12 col-md-offset-2">
+				<div class="col-md-3 col-xs-6">
+					<a href="ajout_annonce.php" role="button" class="btn btn-block btn-info">Ajout</a>
+				</div>
+				<div class="col-md-3 col-xs-6">
+					<a href="index.php" role="button" class="btn btn-block btn-info">Index</a>
+				</div>
+				<div class="col-md-3 col-xs-6">
+					<a href="profile_edit.php" role="button" class="btn btn-block btn-info">edit profile</a>
+				</div>
+				<!--Modal connection in template footer-->
+				<?php if (empty($_SESSION['id'])): ?>
+					<div class="col-md-3 col-xs-6 navButton">
+						<button type="button" class="btn btn-block btn-info">no name defined</button>
+					</div>
+				<?php else: ?>
+					<div class="col-md-3 col-xs-6 navButton">
+						<div class="col-md-9 col-xs-9" id="user-name">
+							<a href="dashboard.php" role="button" id="user-content" class="btn btn-block btn-info"><?php echo $_SESSION['fname'] ?></a>
+						</div>
+						<div class="col-md-3 col-xs-3" id="user-face">
+							<?php if(!empty($_SESSION['picture'])): ?>
+								<a href="profile.php"><img src="image/profile_pic/<?php $_SESSION['picture'] ?>" class="img-responsive" alt="user pic"></a>
+							<?php else: ?>
+								<a href="profile.php"><img src="image/profile_pic/no-pic-user.jpg" class="img-user" alt="no pic"></a>
+							<?php endif; ?>
+						</div>
+					</div>
+				<?php endif; ?>
+			</header>
+		</div>
+		<div class="row" id="flash-message">
+			<div class="col-md-8 col-xs-12 col-md-offset-2">
+				<?php isset($flashType) ? $type = $flashType : $type = 'alert' ?>
+				<?php if(isset($flash)): ?>
+					<div class="alert alert-<?php echo $type ?> alert-dismissible fade in" role="alert">
+					  	<p><?php echo $flash ?></p>
+					  	<button class="close" aria-label="Close" type="button" data-dismiss="alert">
+					    	<span aria-hidden="true">&times;</span>
+					  	</button>
+					</div>
+				<?php endif; ?>
+			</div>
+		</div>
+	</div>
+	

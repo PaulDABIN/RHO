@@ -1,0 +1,196 @@
+/*Some Css here*/
+/*sass --watch style.scss:style.css*/
+header {
+  margin-top: 1%; }
+  header .row {
+    margin: 0; }
+    header .row .glyphicon-parent {
+      padding-top: 6%; }
+    header .row .glyphicon {
+      font-size: 200%; }
+    header .row .glyphicon-user {
+      font-size: 550%;
+      color: #e6e6e6;
+      text-shadow: -1px 0 #d0d0d0, 0 1px #d0d0d0, 1px 0 #d0d0d0, 0 -1px #d0d0d0; }
+    header .row nav {
+      padding: 0.5% 0;
+      background-color: #3e80c7; }
+      header .row nav ul .active a {
+        border: 1px solid white;
+        background-color: #3e80c7; }
+      header .row nav ul .active a:hover {
+        background-color: #3e80c7; }
+      header .row nav ul li a {
+        padding: 0;
+        border: 1px solid #3e80c7;
+        border-radius: 10px;
+        font-size: 1.5em;
+        color: white;
+        transition: border .2s linear; }
+      header .row nav ul li a:hover {
+        border: 1px solid white;
+        background-color: #3e80c7; }
+      header .row nav ul li a:focus {
+        background-color: #3e80c7; }
+      header .row nav ul form button {
+        padding: 0;
+        border: 1px solid #3e80c7;
+        border-radius: 10px;
+        font-size: 1.5em;
+        background-color: #3e80c7;
+        color: white;
+        transition: border .2s linear; }
+      header .row nav ul form button:hover {
+        border: 1px solid white;
+        background-color: #3e80c7;
+        color: white; }
+  header .logo-pic {
+    position: absolute;
+    background-color: white;
+    top: 3%;
+    left: 13%;
+    width: 100%;
+    max-width: 10%;
+    z-index: 100; }
+
+#user-name {
+  padding-right: 0; }
+  #user-name .btn {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
+
+#user-face {
+  padding-left: 0; }
+  #user-face .img-user {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px; }
+
+#flash-message {
+  margin-top: 1%;
+  margin-bottom: 1%; }
+
+.inscription-section {
+  background-color: lightblue; }
+
+.connection-section .header, .inscription-section .header {
+  background-color: #f2f2f2;
+  border: 1px solid #cccccc; }
+  .connection-section .header h3, .inscription-section .header h3 {
+    color: #458ccc; }
+.connection-section .content, .inscription-section .content {
+  padding: 2% 0;
+  background-color: white;
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc; }
+  .connection-section .content button, .inscription-section .content button {
+    border-radius: 0;
+    background-color: #ff5556;
+    color: white; }
+  .connection-section .content button:hover, .inscription-section .content button:hover {
+    background-color: #eb4142; }
+.connection-section .footer, .inscription-section .footer {
+  margin-bottom: 5%;
+  padding: 2% 0;
+  background-color: #f2f2f2;
+  border: 1px solid #cccccc; }
+
+.filtrage {
+  background-color: #e3e3e3;
+  margin-bottom: 30px;
+  height: 200px;
+  width: 100%;
+  padding-top: 5px;
+  font-size: 18px;
+  text-align: center; }
+  .filtrage select {
+    width: 200px;
+    height: 30px;
+    overflow: hidden; }
+  .filtrage button {
+    width: 200px;
+    text-align: center; }
+
+.bande {
+  background-color: #3e80c7;
+  height: 30px;
+  padding-top: 5px;
+  color: white;
+  text-align: center;
+  margin-bottom: 30px; }
+
+.annonce {
+  border: solid lightslategrey 0.5px;
+  padding: 5px;
+  background-color: #ffffff;
+  margin-bottom: 10px; }
+  .annonce .img-annonce {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    /*border: solid #3e80c7 0.5px;*/ }
+  .annonce h4 {
+    color: #3e80c7; }
+  .annonce .interet {
+    background-color: #ff5556;
+    color: white;
+    float: right; }
+  .annonce p {
+    border-top: solid lightslategrey 0.5px; }
+  .annonce .date_annonce {
+    float: right;
+    margin-bottom: 20px;
+    margin-top: 10px; }
+  .annonce .date_publication {
+    float: right;
+    margin-top: 50px; }
+  .annonce .recompense {
+    border-top: solid lightslategrey 0.5px;
+    border-bottom: solid lightslategrey 0.5px;
+    float: left; }
+
+#annonce .head {
+  background-color: #e3e3e3;
+  padding: 1.5% 0.5%; }
+#annonce .banner {
+  margin: 1% 0;
+  background-color: #3e80c7;
+  color: white; }
+#annonce .form .form-border {
+  border: 1px solid lightgray;
+  padding: 1% 0; }
+#annonce .form input[type="submit"] {
+  border-radius: 0;
+  background-color: #ff5556;
+  color: white; }
+#annonce .form input[type="submit"]:hover {
+  background-color: #eb4142; }
+#annonce .form input[type="file"] {
+  display: none; }
+#annonce .form label[for="avatars"] {
+  border: 1px solid #d6d6d6;
+  background-color: #f2f2f2;
+  text-align: center;
+  font-size: 4em;
+  transition: background-color .2s linear; }
+  #annonce .form label[for="avatars"] #file-text {
+    margin-top: 10%;
+    font-size: 0.3em;
+    overflow: hidden; }
+#annonce .form label[for="avatars"]:hover {
+  background-color: #dedede; }
+
+footer {
+  background-color: #636363;
+  margin-top: 1%;
+  font-size: 18px; }
+  footer .apropos {
+    text-align: center;
+    color: white; }
+
+label {
+  text-align: center; }
+
+.localisation {
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map */

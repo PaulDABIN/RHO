@@ -1,0 +1,7 @@
+mysql.hostinger.fr
+u306302033_smw
+u306302033_rsmwa
+&Z$PElP3>AJpP/zuVz
+
+git update-index --assume-unchanged path/to/file
+git update-index --no-assume-unchanged path/to/file
